@@ -43,6 +43,8 @@ interface CodebaseType {
   extractFiles: Function;
   save: Function;
   dependencyKeys: Function;
+  addFile: Function;
+  makeDirectory: Function;
 }
 
 interface FileContainerType {
