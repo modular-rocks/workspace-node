@@ -24,6 +24,7 @@ Each Workspace and Codebase accepts an `Options` argument containing configurati
 | ignoredFiles | Array of files to filter the files by | string[] | ['.d.ts'] | 
 | ignoredImports | Array of import statements | string[] | ['$GlobalVariable'] | 
 | packageContents | JSON Object like in `package.json` | Object | ['$GlobalVariable'] | 
+| packagePath | JSON Object like in `package.json` | Object | ['$GlobalVariable'] | 
 
     const opts: Options = {
       pipeline, 
@@ -34,6 +35,8 @@ Each Workspace and Codebase accepts an `Options` argument containing configurati
       ignoredImports: [],
       packageContents: {}
     }
+
+Either one of `packageContents` or `packagePath` can be used.
 
 A FileContainer accepts 3 arguments: `pathname:string`, `code:string`, `codebase:Codebase`.
 

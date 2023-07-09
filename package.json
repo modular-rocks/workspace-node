@@ -1,6 +1,6 @@
 {
   "name": "@modular-rocks/workspace-node",
-  "version": "0.0.1-development",
+  "version": "0.0.2-development",
   "description": "This is the Workspace for Typescript/Javascript, extending @modular-rocks/workspace specifically for NodeJS.",
   "main": "./dist/index.js",
   "exports": {
