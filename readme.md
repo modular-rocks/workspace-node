@@ -2,11 +2,11 @@
 
 ## Installation
 
-`npm install @modular-rocks/workspace`
+`npm install @modular-rocks/workspace-node`
 
 or 
 
-`yarn add @modular-rocks/workspace` 
+`yarn add @modular-rocks/workspace-node` 
 
 
 ## Usage
