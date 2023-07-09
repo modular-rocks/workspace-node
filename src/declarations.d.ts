@@ -1,4 +1,4 @@
-declare module '@modular-rocks/codebase-node';
+declare module '@modular-rocks/workspace-node';
 
 interface RandomObject extends Record<string, any> {}
 interface FilesContainer extends Record<string, FileContainerType> {}
