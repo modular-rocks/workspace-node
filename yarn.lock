@@ -1412,10 +1412,10 @@
   resolved "https://registry.yarnpkg.com/@modular-rocks/traverse-files/-/traverse-files-0.2.5-development.tgz#586103cb9c0fed11ffba90db63a1698f290dfaec"
   integrity sha512-2/o4mv3bMdhumvvbU1wp1kJ4NBI8DkTwkOR01AMJ6V4RoH8wLPKH8v7pr8mUkcNB4qWmLV+KYzzpzR6hSuk4HA==
 
-"@modular-rocks/workspace@0.1.0-development":
-  version "0.1.0-development"
-  resolved "https://registry.yarnpkg.com/@modular-rocks/workspace/-/workspace-0.1.0-development.tgz#954537cae6bb351fea105fe188c602038b751cb0"
-  integrity sha512-Q3PWAh0rypVyWwe+tWVbf2yvQGazQwm2msUeGiajyL3QVBtq0DzVpQpiZfUn2W14I7bGtXfwHfly1WWtqeikFg==
+"@modular-rocks/workspace@0.1.1-development":
+  version "0.1.1-development"
+  resolved "https://registry.yarnpkg.com/@modular-rocks/workspace/-/workspace-0.1.1-development.tgz#32493a7b8519643494049bceaea47cb575d37f5f"
+  integrity sha512-bymxiAE+XdhQEa41yhqgoPFazYvvRxRtAGXOcRiIBGhlxWO/8t+pi1tY27fnHtbaMifuecaUBDKf5ngmtzrkQQ==
   dependencies:
     "@modular-rocks/traverse-files" "0.2.5-development"
 

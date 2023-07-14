@@ -11,36 +11,20 @@ or
 
 ## Usage
 
-A Workspace can contain multiple Codebases, a Codebase will contain FileContainers. It is designed to be highly configurable, allowing you to extend the Workspace, Codebase or FileContainer classes, allowing you to build anything you want on top.
+Workspace-node is built directly on top of Workspace and adds further functionality for `NodeJS` environments. Additional options for node specific environments are:
 
-Each Workspace and Codebase accepts an `Options` argument containing configuration options. 
+| Option | Description | Type
+| -------- | -------- | -------- |
+| packageContents (optional) | The hash contents of your `package.json` file | Object{} | 
+| packagePath (optional) | The path to your `package.json` file | string | 
 
-| Option | Description | Type |  Example | 
-| -------- | -------- | -------- | -------- |
-| pipeline | Array of functions | Function[] | [functionA, functionB] | 
-| files | Array of arrays consisting of pathname and code | [pathname:string, code:string][] | [['/path', 'hello world']] |
-| src | source of the project | string | '/path/to/project' | 
-| extensions | Array of extensions to filter the files by | string[] | ['ts', 'js'] | 
-| ignoredFiles | Array of files to filter the files by | string[] | ['.d.ts'] | 
-| ignoredImports | Array of import statements | string[] | ['$GlobalVariable'] | 
-| packageContents | JSON Object like in `package.json` | Object | ['$GlobalVariable'] | 
-| packagePath | JSON Object like in `package.json` | Object | ['$GlobalVariable'] | 
+[File](https://github.com/modular-rocks/workspace-node/blob/main/src/workspace/codebase/file/index.ts) also contains more `node` specific methods for AST parsing.
 
-    const opts: Options = {
-      pipeline, 
-      files, 
-      src: '/', 
-      extensions: [], 
-      ignoredFiles: [], 
-      ignoredImports: [],
-      packageContents: {}
-    }
+## Important
 
-Either one of `packageContents` or `packagePath` can be used.
+Remember, this isn't only the version for NodeJS, its the version for virtualising a NodeJS codebase, in NodeJS. 
 
-A FileContainer accepts 3 arguments: `pathname:string`, `code:string`, `codebase:Codebase`.
-
-The pipeline is described in detail in the readme of the pipeline folder.
+Workspace is written in NodeJS, but can work with any codebase by reading files. This is why `workspace-node` uses packages like `BabelJS` to visit the AST, whereas `workspace` can be configured to use other parsers for other languages / environments.
 
 ## Examples
 

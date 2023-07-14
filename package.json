@@ -1,6 +1,6 @@
 {
   "name": "@modular-rocks/workspace-node",
-  "version": "0.0.5-development",
+  "version": "0.1.1-development",
   "description": "This is the Workspace for Typescript/Javascript, extending @modular-rocks/workspace specifically for NodeJS.",
   "main": "./dist/index.js",
   "exports": {
@@ -62,7 +62,7 @@
     "@babel/types": "7.22.5",
     "@modular-rocks/metrics-ts-js": "0.2.3-development",
     "@modular-rocks/traverse-files": "0.2.5-development",
-    "@modular-rocks/workspace": "0.1.0-development",
+    "@modular-rocks/workspace": "0.1.1-development",
     "recast": "0.23.2"
   }
 }
